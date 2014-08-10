@@ -1,0 +1,16 @@
+[
+{
+  "modid": "projectquartz",
+  "name": "Project Quartz",
+  "description": "Semi-secret project for now.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["darkinnit"],
+  "credits": "The Forge and FML guys, for being awesome.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
