@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["darkinnit"],
   "credits": "The Forge and FML guys, for being awesome.",
-  "logoFile": "",
+  "logoFile": "assets/cloakedhappiness/textures/logo/darkinnit-logo.png",
   "screenshots": [],
   "dependencies": []
 }
