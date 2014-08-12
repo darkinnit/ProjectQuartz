@@ -1,6 +1,7 @@
 package com.darkinnit.projectquartz;
 
 import com.darkinnit.projectquartz.handler.ConfigurationHandler;
+import com.darkinnit.projectquartz.init.ModBlocks;
 import com.darkinnit.projectquartz.init.ModItems;
 import com.darkinnit.projectquartz.proxy.iProxy;
 import com.darkinnit.projectquartz.reference.Reference;
@@ -35,7 +36,7 @@ public class projectquartz {
 
         ModItems.init();
 
-        // ModBlocks.init();
+        ModBlocks.init();
 
         LogHelper.debug("Pre Initialisation Complete!");
     }
