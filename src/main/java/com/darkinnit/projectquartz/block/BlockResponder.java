@@ -9,9 +9,9 @@ import net.minecraft.util.IIcon;
 import net.minecraftforge.common.util.ForgeDirection;
 
 /**
- * Created by darkinnit on 12/08/14.
+ * Created by darkinnit on 14/08/14.
  */
-public class BlockObserver extends BlockPQ {
+public class BlockResponder extends BlockPQ {
 
     @SideOnly(Side.CLIENT)
     private static class Icons {
@@ -20,10 +20,9 @@ public class BlockObserver extends BlockPQ {
         public static IIcon side;
     }
 
-    public BlockObserver() {
+    public BlockResponder() {
         super(Material.rock);
-        this.setBlockName("observer");
-        this.setBlockTextureName("observer");
+        this.setBlockName("responder");
         this.setStepSound(soundTypeStone);
         this.setHardness(1.5F);
         this.setResistance(15.0F);
@@ -32,9 +31,9 @@ public class BlockObserver extends BlockPQ {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister registry) {
-        Icons.top = registry.registerIcon(Textures.OBSERVER_TOP);
-        Icons.bottom = registry.registerIcon(Textures.OBSERVER_BOTTOM);
-        Icons.side = registry.registerIcon(Textures.OBSERVER_SIDE);
+        Icons.top = registry.registerIcon(Textures.RESPONDER_TOP);
+        Icons.bottom = registry.registerIcon(Textures.RESPONDER_BOTTOM);
+        Icons.side = registry.registerIcon(Textures.RESPONDER_SIDE);
 
         setTexture(ForgeDirection.UP, Icons.top);
         setTexture(ForgeDirection.DOWN, Icons.bottom);

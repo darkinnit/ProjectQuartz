@@ -1,3 +1,4 @@
 item.projectquartz:tempThing.name=Temp Thing
 tile.projectquartz:observer.name=Observer
+tile.projectquartz:responder.name=Responder
 itemGroup.projectquartz=Project Quartz

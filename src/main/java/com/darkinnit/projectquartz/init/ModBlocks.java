@@ -16,5 +16,4 @@ public class ModBlocks {
         GameRegistry.registerBlock(observer, "observer");
     }
 
-
 }

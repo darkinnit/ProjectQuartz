@@ -7,6 +7,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.common.util.ForgeDirection;
 
 /**
  * Created by darkinnit on 11/08/14.
@@ -22,6 +24,7 @@ public class BlockPQ extends Block {
     {
         this(Material.rock);
     }
+    public IIcon[] textures = new IIcon[6];
 
     @Override
     public String getUnlocalizedName()
@@ -52,5 +55,14 @@ public class BlockPQ extends Block {
         return unlocalizedName.substring(
                 unlocalizedName.indexOf(".") + 1
         );
+    }
+
+
+    public void setTexture(ForgeDirection direction, IIcon icon) {
+        textures[direction.ordinal()] = icon;
+    }
+
+    public void setDefaultTexture(IIcon icon) {
+        this.blockIcon = icon;
     }
 }
